@@ -7,8 +7,8 @@ https://www.youtube.com/watch?v=omDBpgKnIlo&t=5s
 ## Written info (same like in the vid)
 
 == NuGet Packs ======
-- WebView2
-- Newtonsoft.Json
+- `WebView2`
+- `Newtonsoft.Json`
 
 == References =======
 - Your based API (Based on Nezur or Xeno)
@@ -22,9 +22,9 @@ https://www.youtube.com/watch?v=omDBpgKnIlo&t=5s
 https://mrnoxy.github.io/StormMonaco/
 
 -== Clear button =====
-
+```csharp
 await webView23.ExecuteScriptAsync("SetText('');");
-
+```
 -== Execute button ===
 ```csharp
 var result = await webView23.ExecuteScriptAsync("GetText();");
