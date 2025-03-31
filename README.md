@@ -18,14 +18,19 @@ https://www.youtube.com/watch?v=omDBpgKnIlo&t=5s
 - Xeno
 
 == Monaco + Tab + AutoSave Link
+
 https://mrnoxy.github.io/StormMonaco/
 
 -== Clear button =====
+
 await webView23.ExecuteScriptAsync("SetText('');");
 
 -== Execute button ===
+
 var result = await webView23.ExecuteScriptAsync("GetText();");
 
 // Use JsonConvert to deserialize the string (removes escaping and extra quotes automatically)
+
 string cleanResult = JsonConvert.DeserializeObject<string>(result);
+
 SpaceAPIb.API.Execute(cleanResult); // Use ur own API call function.
