@@ -26,11 +26,9 @@ https://mrnoxy.github.io/StormMonaco/
 await webView23.ExecuteScriptAsync("SetText('');");
 
 -== Execute button ===
-
+```
 var result = await webView23.ExecuteScriptAsync("GetText();");
-
 // Use JsonConvert to deserialize the string (removes escaping and extra quotes automatically)
-
 string cleanResult = JsonConvert.DeserializeObject<string>(result);
-
 SpaceAPIb.API.Execute(cleanResult); // Use ur own API call function.
+```
