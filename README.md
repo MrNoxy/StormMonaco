@@ -26,7 +26,7 @@ https://mrnoxy.github.io/StormMonaco/
 await webView23.ExecuteScriptAsync("SetText('');");
 
 -== Execute button ===
-```
+```csharp
 var result = await webView23.ExecuteScriptAsync("GetText();");
 // Use JsonConvert to deserialize the string (removes escaping and extra quotes automatically)
 string cleanResult = JsonConvert.DeserializeObject<string>(result);
